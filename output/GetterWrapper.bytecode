@@ -1,0 +1,74 @@
+Classfile /Users/rida/src/accessors/build/classes/java/main/foo/rida/GetterWrapper.class
+  Last modified Sep 9, 2023; size 422 bytes
+  SHA-256 checksum 11a855364816407b9cd510b14cc311824962b4d2915fccdc61877bf244aa52f3
+  Compiled from "GetterWrapper.java"
+public final class foo.rida.GetterWrapper
+  minor version: 0
+  major version: 61
+  flags: (0x0031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+  this_class: #8                          // foo/rida/GetterWrapper
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 1, methods: 2, attributes: 1
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Fieldref           #8.#9          // foo/rida/GetterWrapper.number:I
+   #8 = Class              #10            // foo/rida/GetterWrapper
+   #9 = NameAndType        #11:#12        // number:I
+  #10 = Utf8               foo/rida/GetterWrapper
+  #11 = Utf8               number
+  #12 = Utf8               I
+  #13 = Utf8               (I)V
+  #14 = Utf8               Code
+  #15 = Utf8               LineNumberTable
+  #16 = Utf8               LocalVariableTable
+  #17 = Utf8               this
+  #18 = Utf8               Lfoo/rida/GetterWrapper;
+  #19 = Utf8               getNumber
+  #20 = Utf8               ()I
+  #21 = Utf8               SourceFile
+  #22 = Utf8               GetterWrapper.java
+{
+  private final int number;
+    descriptor: I
+    flags: (0x0012) ACC_PRIVATE, ACC_FINAL
+
+  public foo.rida.GetterWrapper(int);
+    descriptor: (I)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: iload_1
+         6: putfield      #7                  // Field number:I
+         9: return
+      LineNumberTable:
+        line 6: 0
+        line 7: 4
+        line 8: 9
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      10     0  this   Lfoo/rida/GetterWrapper;
+            0      10     1 number   I
+
+  public int getNumber();
+    descriptor: ()I
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #7                  // Field number:I
+         4: ireturn
+      LineNumberTable:
+        line 11: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lfoo/rida/GetterWrapper;
+}
+SourceFile: "GetterWrapper.java"

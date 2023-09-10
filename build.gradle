@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+    id 'me.champeau.jmh' version '0.7.1'
+}
+
+group = 'foo.rida'
+version = '1.0-SNAPSHOT'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(20)
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+}

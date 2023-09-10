@@ -1,0 +1,4 @@
+Benchmark                                    Mode  Cnt    Score   Error  Units
+JmhBenchmark.benchmarkGetterWrappers         avgt   25  312.967 ± 8.474  ns/op
+JmhBenchmark.benchmarkRawWrappers            avgt   25  311.917 ± 8.322  ns/op
+JmhBenchmark.benchmarkVirtualGetterWrappers  avgt   25  323.835 ± 8.074  ns/op
