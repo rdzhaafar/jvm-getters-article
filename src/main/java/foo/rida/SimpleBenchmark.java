@@ -71,7 +71,7 @@ public class SimpleBenchmark {
         return wrappers;
     }
 
-    private static int benchmarkRawWrappers(RawWrapper[] wrappers) {
+    public static int benchmarkRawWrappers(RawWrapper[] wrappers) {
         int sum = 0;
         for (RawWrapper wrapper : wrappers) {
             sum += wrapper.number;
@@ -79,13 +79,7 @@ public class SimpleBenchmark {
         return sum;
     }
 
-    private static int rawWrapperAdd(RawWrapper wrapper, int sum) {
-        int number = wrapper.number;
-        sum += number;
-        return sum;
-    }
-
-    private static int benchmarkGetterWrappers(GetterWrapper[] wrappers) {
+    public static int benchmarkGetterWrappers(GetterWrapper[] wrappers) {
         int sum = 0;
         for (GetterWrapper wrapper : wrappers) {
             sum += wrapper.getNumber();
@@ -93,13 +87,7 @@ public class SimpleBenchmark {
         return sum;
     }
 
-    private static int getterWrapperAdd(GetterWrapper wrapper, int sum) {
-        int number = wrapper.getNumber();
-        sum += number;
-        return sum;
-    }
-
-    private static int benchmarkVirtualGetterWrappers(ParentGetterWrapper[] wrappers) {
+    public static int benchmarkVirtualGetterWrappers(ParentGetterWrapper[] wrappers) {
         int sum = 0;
         for (ParentGetterWrapper wrapper : wrappers) {
             sum += wrapper.getNumber();
@@ -107,9 +95,4 @@ public class SimpleBenchmark {
         return sum;
     }
 
-    private static int virtualGetterWrapperAdd(ParentGetterWrapper wrapper, int sum) {
-        int number = wrapper.getNumber();
-        sum += number;
-        return sum;
-    }
 }
